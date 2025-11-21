@@ -1,0 +1,213 @@
+:root {
+    --primary-color: #3f51b5;
+    --secondary-color: #e91e63;
+    --text-color: #333;
+    --background-color: #f4f4f9;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    background-color: #fff;
+    margin: 0;
+    padding: 0 5vw;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+section {
+    padding: 8rem 0;
+}
+#about p {
+    font-size: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header nav a {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    min-height: 70vh;
+    padding: 5rem 0;
+}
+
+#intro img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0.5rem solid var(--primary-color);
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+#intro p {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+@keyframes color-shift {
+    0% {
+        color: var(--secondary-color);
+    }
+
+    50% {
+        color: var(--primary-color);
+    }
+
+    100% {
+        color: var(--secondary-color);
+    }
+}
+
+#intro>div>span {
+    font-size: 5rem;
+    font-weight: bold;
+    display: block;
+    animation: color-shift 4s infinite alternate;
+    margin: 1rem 0;
+}
+
+a:hover,
+button:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    transform: translateY(-0.3rem) scale(1.02);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+#skills>div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+#projects>div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+#skills article,
+#projects article {
+    border: 1px solid #ddd;
+    border-radius: 0.8rem;
+    padding: 2.5rem;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    font-size: 30px;
+}
+
+#contact form {
+    max-width: 60rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#contact input,
+#contact textarea {
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+}
+
+#contact textarea {
+    resize: vertical;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 5rem;
+    font-size: 1.4rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rem 5vw;
+}
+
+@media (min-width: 1024px) {
+    #intro {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+        min-height: 80vh;
+    }
+
+    #intro img {
+        width: 30rem;
+        height: 30rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #intro img {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    #intro>div>span {
+        font-size: 4rem;
+    }
+}

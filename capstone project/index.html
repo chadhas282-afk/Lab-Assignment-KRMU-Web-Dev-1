@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust - Explore the World</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="container header-content">
+            <h1 class="logo">Wanderlust</h1>
+            <nav aria-label="Primary Navigation">
+                <ul class="nav-list">
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#packages">Packages</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="h-banner">
+            <div class="h-content">
+                <h2>Explore the World with Wanderlust</h2>
+                <p>Your adventure starts here. Discover breathtaking destinations, curated tours, and unforgettable experiences.</p>
+                <a href="#packages" class="category-button">Start Your Journey</a>
+            </div>
+        </section>
+
+        <section id="destinations" class="content-section container">
+            <h3>Popular Destinations</h3>
+            <div class="destination-grid">
+                <article class="destination-card">
+                    <img src="maldives.jpg" alt="White sand beach and ocean in Maldives" loading="lazy">
+                    <div class="card-body">
+                        <h4>Maldives</h4>
+                        <p>Crystal clear waters and white sandy beaches.</p>
+                      
+                    </div>
+                </article>
+                <article class="destination-card">
+                    <img src="paris.jpg" alt="Eiffel Tower in Paris at sunset" loading="lazy">
+                    <div class="card-body">
+                        <h4>Paris</h4>
+                        <p>The city of lights and romance awaits you.</p>
+                    </div>
+                </article>
+                <article class="destination-card">
+                    <img src="bali.jpg" alt="Rice terraces in Bali" loading="lazy">
+                    <div class="card-body">
+                        <h4>Bali</h4>
+                        <p>Experience the magic of tropical paradise.</p>
+                    </div>
+                </article>
+                <article class="destination-card">
+                    <img src="new-york.jpg" alt="Statue of Liberty in New York" loading="lazy">
+                    <div class="card-body">
+                        <h4>New York</h4>
+                        <p>The city that never sleeps, full of wonders.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="packages" class="content-section container">
+            <h3>Tour Packages</h3>
+            <div class="package-grid">
+                <article class="package-card">
+                    <h4>Maldives Escape</h4>
+                    <p>Luxury resort, snorkeling, island hopping.</p>
+                    <div class="price-info">
+                        <span class="price">₹1,06,999</span>
+                        <span class="details">5 Days / 4 Nights</span>
+                    </div>
+                </article>
+                <article class="package-card">
+                    <h4>Paris Discovery</h4>
+                    <p>Eiffel Tower, Louvre, Seine cruise.</p>
+                    <div class="price-info">
+                        <span class="price">₹1,33,799</span>
+                        <span class="details">7 Days / 6 Nights</span>
+                    </div>
+                </article>
+                <article class="package-card">
+                    <h4>Bali Adventure</h4>
+                    <p>Temples, rice terraces, beaches.</p>
+                    <div class="price-info">
+                        <span class="price">₹89,199</span>
+                        <span class="details">6 Days / 5 Nights</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section container form-section">
+            <h3>Inquire About a Trip</h3>
+            <form action="#" method="POST" class="inquiry-form">
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="name" placeholder="xyz" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email *</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="destination">Interested Destination</label>
+                    <input type="text" id="destination" name="destination" placeholder="e.g., Paris Discovery">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us about your travel plans..."></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Inquiry</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h4>Wanderlust</h4>
+                <p>We craft unforgettable travel experiences.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Wanderlust. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
